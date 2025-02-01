@@ -1,0 +1,15 @@
+# python
+**/__pycache__
+
+# conda
+**/.conda
+
+# ========== JustPressPrScrn - Dev ==========
+# 可生成的配置文件
+config.json 
+
+# 程序自动生成的日志
+**/logs
+
+# 测试时生成的截图
+**/screenshot*.png

@@ -1,0 +1,31 @@
+{
+    "title": {
+        "tray": "JustPressPrScrn",
+        "main_window": "JustPressPrScrn Config"
+    },
+    "welcome": {
+        "msg_welcome": "Welcome to JustPressPrScrn!",
+        "checkbox_hint": "Show welcome message on startup"
+    },
+    "config": {
+        "path_to_save": {
+            "title": "Path to Save",
+            "msg_method_1": "Method 1:",
+            "input_hint": "Enter the path where screenshots will be saved",
+            "input_error": "Invalid path. Please enter a valid path.",
+            "msg_method_2": "or Method 2:",
+            "button_hint": "Browse"
+        },
+        "feedback_when_saved": {
+            "title": "Feedback when Saved",
+            "checkbox_hint": "Show notification when screenshot is saved."
+        }
+    },
+    "tray": {
+        "menu": {
+            "print_screen": "Print Screen",
+            "config": "Config",
+            "exit": "Exit"
+        }
+    }
+}

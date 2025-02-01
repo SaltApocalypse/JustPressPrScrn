@@ -1,0 +1,60 @@
+{
+    "title": {
+        "tray": "JustPressPrScrn",
+        "main_window": "JustPressPrScrn Config"
+    },
+    "config": {
+        "welcome": {
+            "msg_welcome": "欢迎使用 JustPressPrScrn！"
+        },
+        "path_to_save": {
+            "title": "截图保存位置",
+            "msg_method_1": "方法 1：",
+            "input_hint": "填写文件夹路径",
+            "input_error": "文件夹路径不存在，截图时会尝试创建该路径",
+            "msg_method_2": "或 方法 2：",
+            "button_hint": "选择文件夹",
+            "button_open_folder": "打开图片文件夹"
+        },
+        "hotkey": {
+            "title": "快捷键设置",
+            "msg_current_hotkey": "当前快捷键为：",
+            "button_hint": "修改快捷键",
+            "msg_new_hotkey_wait": "请按下新的快捷键",
+            "msg_new_hotkey": "新的快捷键为：",
+            "msg_new_hotkey_saved": "新的快捷键已保存："
+        },
+        "feedback_when_saved": {
+            "title": "反馈",
+            "checkbox_hint": "截图成功提示"
+        }
+    },
+    "tray": {
+        "menu": {
+            "print_screen": "截图",
+            "config": "设置",
+            "exit": "退出"
+        }
+    },
+    "logger": {
+        "tray_loaded": "tray 已加载",
+        "tray_unload": "tray 已注销",
+        "print_screen_loaded": "print_screen 已加载，目前快捷键为：",
+        "print_screen_unload": "print_screen 已注销",
+        "print_screen_success": "截图成功",
+        "print_screen_failed": "截图失败",
+        "maingui_loaded": "MainGUI 已加载",
+        "maingui_unload": "MainGUI 已注销",
+        "maingui_alive": "MainGUI 存活中",
+        "jpp_loaded": "JustPressPrScrn 已加载",
+        "jpp_unload": "JustPressPrScrn 已注销",
+        "jpp_exit": "JustPressPrScrn 正在退出...",
+        "pathtosave_does_not_exist": "保存目录不存在，尝试创建",
+        "pathtosave_success_to_create": "保存目录创建成功",
+        "pathtosave_failed": "保存目录创建失败。您可能需要使用管理员权限启动",
+        "openfolder_does_not_exist": "保存目录不存在，无法打开",
+        "hotkey_error": "快捷键设置错误",
+        "hotkey_record": "开始键盘监听",
+        "hotkey_record_end": "结束键盘监听"
+    }
+}
