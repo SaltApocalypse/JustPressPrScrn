@@ -20,9 +20,9 @@ class DPGManager:
         - 注册字体颜色
         """
         # ========== 注册字体 ==========
-        font_path = Path(__file__).parent.parent.joinpath("assets/fonts/DreamHanSans-W14.ttc")
+        self.font_path = Path(__file__).parent.parent.parent.joinpath("data/assets/fonts/DreamHanSans-W14.ttc")
         with dpg.font_registry():
-            with dpg.font(font_path, 16) as chinese_font:
+            with dpg.font(self.font_path, 16) as chinese_font:
                 dpg.add_font_range_hint(dpg.mvFontRangeHint_Default)
                 dpg.add_font_range_hint(dpg.mvFontRangeHint_Chinese_Simplified_Common)
                 dpg.bind_font(chinese_font)

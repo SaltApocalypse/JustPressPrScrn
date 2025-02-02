@@ -28,7 +28,7 @@ class Tray:
         """
         创建系统托盘图标
         """
-        icon_path = Path(__file__).parent.parent.joinpath("assets/icons/icon.png")
+        icon_path = Path(__file__).parent.parent.parent.joinpath("data/assets/icons/icon.png")
         icon_image = Image.open(icon_path)
 
         # 创建托盘菜单项
@@ -72,7 +72,6 @@ class Tray:
         # 注销 print_screen
         self.print_screen.hotkey_unregister()
         del self.print_screen
-        
 
         # 注销 tray
         self.is_running = False

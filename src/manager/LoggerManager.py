@@ -1,10 +1,8 @@
-import sys
 from datetime import datetime
 from pathlib import Path
+import sys
 import traceback
 from loguru import logger
-
-# NOTE: 避免嵌套引用，并提供那种多次调用的方法
 
 
 class LoggerManager:
@@ -15,7 +13,7 @@ class LoggerManager:
     """
 
     def __init__(self):
-        self.log_path = Path(__file__).parent.parent.joinpath("logs")
+        self.log_path = Path(__file__).parent.parent.parent.joinpath("data/logs")
         self.__init_log_folder(self.log_path)  # 如果不存在目标文件夹则创建
         self.log_name = f"log_{datetime.now():%y-%m-%d}.log"
 
@@ -28,9 +26,10 @@ class LoggerManager:
             retention="7 days",
             compression="zip",
         )
-        # 日志输出等级
-        self.logger.add(sys.stdout, format="{time:YYMMDD HH:mm:ss} {level} {message}")  # DEBUG
-        # self.logger.add(sys.stdout, level="INFO", format="{time:YYMMDD HH:mm:ss} {level} {message}") # Release
+
+        # NOTE: 如果希望程序启动的时候不产生额外的终端，请注释这块
+        # 终端日志输出等级
+        # self.logger.add(sys.stdout, format="{time:YYMMDD HH:mm:ss} {level} {message}")
 
         # 针对未处理的异常捕获
         sys.excepthook = self.__exception_handler

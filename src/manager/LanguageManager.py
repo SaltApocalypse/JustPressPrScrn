@@ -24,8 +24,8 @@ class LanguageManager:
         self.language = language
 
         # 读取对应语言的词典
-        language_file_path = Path(__file__).parent.parent.joinpath(f"languages/{self.language}.json")
-        with open(language_file_path, "r", encoding="utf-8") as f:
+        self.language_file_path = Path(__file__).parent.parent.parent.joinpath(f"data/languages/{self.language}.json")
+        with open(self.language_file_path, "r", encoding="utf-8") as f:
             self.language_dict = json.load(f)
 
 

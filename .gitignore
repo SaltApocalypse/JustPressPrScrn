@@ -13,3 +13,8 @@ config.json
 
 # 测试时生成的截图
 **/screenshot*.png
+
+# nuitka
+*.build
+*.dist
+Setup

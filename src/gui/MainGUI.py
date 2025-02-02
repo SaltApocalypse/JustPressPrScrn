@@ -1,5 +1,4 @@
 import dearpygui.dearpygui as dpg
-from pathlib import Path
 
 from src.manager.ConfigManager import config_manager
 from src.manager.DPGManager import dpg_manager

@@ -1,6 +1,6 @@
-from pathlib import Path
 import json
 import locale
+from pathlib import Path
 
 
 class ConfigManager:
@@ -15,7 +15,7 @@ class ConfigManager:
 
     def __init__(self):
         self.config = None
-        self.config_file_path = Path(__file__).parent.parent.joinpath("config.json")
+        self.config_file_path = Path(__file__).parent.parent.parent.joinpath("data/config.json")
         self.read_config()
 
     def read_config(self):
@@ -48,7 +48,7 @@ class ConfigManager:
 
         self.config["config"] = {}
         self.config["config"]["path_to_save"] = str(Path.home().joinpath("Pictures").joinpath("JustPressPrScrn"))
-        self.config["config"]["hotkey"] = "print_screen" 
+        self.config["config"]["hotkey"] = "print_screen"
 
         self.write_config()
 
