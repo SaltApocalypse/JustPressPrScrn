@@ -34,9 +34,12 @@ class LoggerManager:
         # 针对未处理的异常捕获
         sys.excepthook = self.__exception_handler
 
-    def __init_log_folder(self, folder):
+    def __init_log_folder(self, folder: str):
         """
         检查是否存在 logs 文件夹，如果不存在则创建
+
+        Args:
+            folder (str): 日志文件夹路径 (logs)
         """
         folder = Path(folder)
         if not folder.exists():

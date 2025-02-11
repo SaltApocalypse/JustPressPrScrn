@@ -26,15 +26,15 @@ class ConfigureGUI:
         self.language_dict = language_maneger.language_dict
         self.print_screen = print_screen
 
-    def create_windows(self, window_id: str = "DefaultWindowId") -> str:
+    def create_windows(self, window_id: any = "DefaultWindowId") -> any:
         """
         构建窗体
 
-        @param
-        - window_id: 窗体的ID
+        Args:
+            window_id (any): 窗体的ID
 
-        @return
-        - str: 窗体的ID
+        Returns:
+            any: 窗体的ID
         """
         self.window_id = window_id
 

@@ -52,8 +52,8 @@ class PrintScreen:
         """
         注册快捷键
 
-        @param
-        - hotkey: 注册的快捷键
+        Args:
+            hotkey (str): 注册的快捷键
         """
         if hotkey is not None:
             self.hotkey = hotkey
@@ -72,12 +72,12 @@ class PrintScreen:
             self.is_running = False
             self.logger.debug(self.language_dict.get("logger").get("print_screen_unload"))
 
-    def hotkey_reregister(self, hotkey=None):
+    def hotkey_reregister(self, hotkey:str=None):
         """
         重新注册快捷键（先注销后注册）
 
-        @param
-        - hotkey: 注册的快捷键
+        Args:
+            hotkey (str): 注册的快捷键
         """
         self.hotkey_unregister()
         self.hotkey_register(hotkey)

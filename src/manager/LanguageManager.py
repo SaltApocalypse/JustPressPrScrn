@@ -14,12 +14,12 @@ class LanguageManager:
 
         self.get_language_dict()
 
-    def get_language_dict(self, language="zh"):
+    def get_language_dict(self, language: str = "zh"):
         """
         获取当前语言词典
 
-        @param
-        - language: 选择的语言
+        Args:
+            language (str): 选择的语言
         """
         self.language = language
 
